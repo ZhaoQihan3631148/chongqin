@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chongqing</title>
+<meta charset="utf-8">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  background: #8b2500;
+  color: white;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .logo {
+  font-size: 28px;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+}
+.sidebar .subtitle {
+  font-size: 11px;
+  letter-spacing: 3px;
+  opacity: 0.6;
+  margin-bottom: 60px;
+}
+.sidebar nav {
+  flex: 1;
+}
+.sidebar nav a {
+  display: block;
+  color: rgba(255,255,255,0.6);
+  padding: 18px 0;
+  font-size: 13px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: color 0.3s;
+}
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  color: white;
+}
+.main {
+  margin-left: 280px;
+  flex: 1;
+}
+.block {
+  display: flex;
+  min-height: 100vh;
+}
+.block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.block-img {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.block-content {
+  width: 50%;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fef9f5;
+}
+.block-content .number {
+  font-size: 80px;
+  color: #8b2500;
+  opacity: 0.15;
+  font-weight: bold;
+  margin-bottom: -30px;
+}
+.block-content h2 {
+  font-size: 32px;
+  color: #8b2500;
+  letter-spacing: 4px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.block-content p {
+  color: #666;
+  line-height: 2;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.block-content .tag {
+  display: inline-block;
+  padding: 6px 15px;
+  border: 1px solid #8b2500;
+  color: #8b2500;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  width: fit-content;
+}
+.hero-block {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(139,37,0,0.7), rgba(139,37,0,0.7)), url('images/chongqing-hero.jpeg') center/cover;
+  text-align: center;
+  color: white;
+}
+.hero-block h1 {
+  font-size: 72px;
+  font-weight: 200;
+  letter-spacing: 15px;
+  margin-bottom: 15px;
+}
+.hero-block p {
+  font-size: 13px;
+  letter-spacing: 6px;
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">CHONGQING</div>
+    <div class="subtitle">MOUNTAIN CITY</div>
+    <nav>
+      <a href="index.html" class="active">HOME</a>
+      <a href="hotpot.html">HOTPOT</a>
+      <a href="jiefangbei.html">JIEFANGBEI</a>
+      <a href="dazu.html">DAZU ROCKS</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="hero-block">
+      <div>
+        <h1>CHONGQING</h1>
+        <p>MOUNTAIN CITY / RIVER CITY / FOG CITY</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-img" style="background-image: url('images/hotpot-preview.jpeg');"></div>
+      <div class="block-content">
+        <div class="number">01</div>
+        <div class="tag">CUISINE</div>
+        <h2>CHONGQING HOTPOT</h2>
+        <p>Born in the Yangtze River docks, Chongqing hotpot is a fiery culinary tradition that defines this city. The signature maoclazi broth, infused with dried chilies and Sichuan peppercorns, creates a numbingly spicy experience unique to Chongqing.</p>
+        <p>Locals gather around steaming copper pots, cooking thinly sliced meats, leafy vegetables, and bean products in bubbling broth. It is not just a meal, but a social ritual that brings people together.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-img" style="background-image: url('images/jiefangbei-preview.jpeg');"></div>
+      <div class="block-content">
+        <div class="number">02</div>
+        <div class="tag">LANDMARK</div>
+        <h2>JIEFANGBEI</h2>
+        <p>The birthplace of China's modern liberation movement, Jiefangbei Pedestrian Street is the heart of Chongqing's commercial district. The iconic People's Liberation Monument stands at its center, a symbol of the city's revolutionary heritage.</p>
+        <p>Today, the surrounding area pulses with energy, featuring luxury malls, traditional teahouses, and the best views of the city's dramatic skyline along the Yangtze River.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-img" style="background-image: url('images/dazhou-preview.jpeg');"></div>
+      <div class="block-content">
+        <div class="number">03</div>
+        <div class="tag">UNESCO HERITAGE</div>
+        <h2>DAZU ROCK Carvings</h2>
+        <p>Carved between the 9th and 13th centuries, the Dazu Rock Carvings represent the peak of Chinese Buddhist stone art. Spread across 75 sites, these intricate carvings blend Buddhism, Taoism, and Confucianism into breathtaking visual narratives.</p>
+        <p>The Thousand-Hand Guanyin statue and the grand Bao'en Palace feature some of the most exquisite and well-preserved examples of this ancient art form, designated a UNESCO World Heritage Site in 1999.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
